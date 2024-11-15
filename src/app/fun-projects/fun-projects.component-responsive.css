@@ -1,0 +1,70 @@
+@media screen and (max-width: 430px) {
+    .container {
+        width: 340px;
+    }
+
+    #funProjects {
+        height: 2100px;
+    }
+
+    .product-table {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .project {
+        padding-top: 12px;
+        row-gap: 12px;
+        width: 240px;
+        /* height: 60vw; */
+        border-radius: 2vw;
+    }
+
+    .project-title {
+        color: var(--hightColor_blueGreen);
+        font-size: 18px;
+    }
+
+    #project-title-container {
+        margin-left: 6px;
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    .projectDescription {
+        width: 58vw;
+        margin-left: 2vw;
+        font-size: 14px;
+    }
+
+    #projectImage {
+        margin-top: 2vw;
+        width: 36px;
+    }
+
+    .KnowMoreButton {
+        width: 105px;
+        height: 32px;
+        font-size: 12px;
+        border-radius: 1vw;
+        margin-left: 2vw;
+    }
+
+
+
+    .load-button {
+        margin-top: -20vw;
+    }
+
+    .load-more-button {
+        font-size: 14px;
+        width: 150px;
+        height: 24px;
+        margin-top: 12vh;
+        border-radius: 1vw;
+    }
+
+    .responsive-height {
+        height: 80vh;
+    }
+}

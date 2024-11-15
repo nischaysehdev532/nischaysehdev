@@ -1,0 +1,28 @@
+<div id="learnMoreAboutProjectContianer" class="scrollbar">
+    <div id="productContainer">
+        <div id="projectImageContainer">
+            <div id="left-navigation-button" class="navigation-button"><img src="Left-arrow-icon.png"
+                    alt="Left navigation button" (click)="previousImage()"
+                    (mouseenter)="animationUtility.changeColor($event)"
+                    (mouseleave)="animationUtility.revertColor($event)">
+            </div>
+            <div>
+                <img src={{getCurrentProductImageUrl()}} alt={{getProductName()}} id="product-image">
+            </div>
+            <div id="right-navigation-button" class="navigation-button"> <img src="Right-arrow-icon.png"
+                    alt="Right navigation button" (click)="nextImage()"
+                    (mouseenter)="animationUtility.changeColor($event)"
+                    (mouseleave)="animationUtility.revertColor($event)">
+            </div>
+        </div>
+    </div>
+    <div id="projectDescriptionContainer">
+        {{getProductDescription()}}
+        {{getProductDescription()}}
+        {{getProductDescription()}}
+        {{getProductDescription()}}
+    </div>
+    <div id="closeButtonContainer" (click)="closeProjectContainer()">
+        Close
+    </div>
+</div>
