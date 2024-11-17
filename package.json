@@ -1,6 +1,7 @@
 {
   "name": "portfolio-v2",
   "version": "0.0.0",
+  "homepage": "https://nischaysehdev532.github.io/nischaysehdev/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
