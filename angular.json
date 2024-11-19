@@ -7,15 +7,15 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "/",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/portfolio-v2",
-            "index": "./index.html",
-            "browser": "./main.ts",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -27,10 +27,10 @@
               }
             ],
             "styles": [
-              "./styles.css"
+              "src/styles.css"
             ],
             "scripts": [],
-            "server": "./main.server.ts",
+            "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
@@ -90,13 +90,10 @@
               }
             ],
             "styles": [
-              "./styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
