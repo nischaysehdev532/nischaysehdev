@@ -17,6 +17,13 @@ export class CertificateDB {
                 "https://explore.skillbuilder.aws/").
                 setDigitalcertificateImagePath("AWS_Cloud_Essentials_Course_Certificate.jpg")
                 .build());
+        this.certificates.push(
+            new Certificate.Builder(
+                "Spring 5 Basics with Spring Boot",
+                "Infosys SpringBoard",
+                "https://infyspringboard.onwingspan.com/web/en/app/toc/lex_auth_01296689056211763272_shared/overview").
+                setDigitalcertificateImagePath("Spring 5 Basics with Spring Boot.jpg")
+                .build());
     }
 
 
