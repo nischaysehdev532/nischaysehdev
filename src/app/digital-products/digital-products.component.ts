@@ -7,8 +7,10 @@ import { ComponentUtility } from "../utitlity/componentUtility";
 const MAX_HEIGHT = "1240px"
 const HEIGHT = "800px"
 
-const RESPONSIVE_MAX_HEIGHT = "1000px"
-const RESPONSIVE_HEIGHT = "600px"
+const RESPONSIVE_MAX_HEIGHT = "1200px"
+const RESPONSIVE_HEIGHT = "800px"
+const RESPONSIVE_MAX_HEIGHT_2 = "1500px"
+const RESPONSIVE_HEIGHT_2 = "1000px"
 
 @Component({
   selector: 'app-digital-products',
@@ -58,14 +60,24 @@ export class DigitalProductsComponent {
    * getHeight
    */
   public getMaxHeight() {
-    return this.document.body.offsetWidth > 415 ? MAX_HEIGHT : RESPONSIVE_MAX_HEIGHT;
+    if (this.document.body.offsetWidth > 415 && this.document.body.offsetWidth < 1082) {
+      return RESPONSIVE_MAX_HEIGHT_2;
+    } else if (this.document.body.offsetWidth <= 415) {
+      return RESPONSIVE_MAX_HEIGHT;
+    }
+    return MAX_HEIGHT;
   }
 
   /**
    * getHeight
    */
   public getOriginamHeight() {
-    return this.document.body.offsetWidth > 415 ? HEIGHT : RESPONSIVE_HEIGHT;
+    if (this.document.body.offsetWidth > 415 && this.document.body.offsetWidth < 1082) {
+      return RESPONSIVE_HEIGHT_2;
+    } else if (this.document.body.offsetWidth <= 415) {
+      return RESPONSIVE_HEIGHT;
+    }
+    return HEIGHT;
   }
 
   private applyFadeInAnimation(): void {

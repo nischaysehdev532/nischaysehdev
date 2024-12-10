@@ -6,8 +6,10 @@ import { ComponentUtility } from '../utitlity/componentUtility';
 const MAX_HEIGHT = "1540px"
 const HEIGHT = "840px"
 
-const RESPONSIVE_MAX_HEIGHT = "4000px"
-const RESPONSIVE_HEIGHT = "2100px"
+const RESPONSIVE_MAX_HEIGHT = "4500px"
+const RESPONSIVE_MAX_HEIGHT_2 = "2700px"
+const RESPONSIVE_HEIGHT = "2600px"
+const RESPONSIVE_HEIGHT_2 = "1200px"
 @Component({
   selector: 'app-fun-projects',
   standalone: true,
@@ -53,14 +55,24 @@ export class FunProjectsComponent {
    * getHeight
    */
   public getMaxHeight() {
-    return this.document.body.offsetWidth > 415 ? MAX_HEIGHT : RESPONSIVE_MAX_HEIGHT;
+    if (this.document.body.offsetWidth > 415 && this.document.body.offsetWidth < 1082) {
+      return RESPONSIVE_MAX_HEIGHT_2;
+    } else if (this.document.body.offsetWidth <= 415) {
+      return RESPONSIVE_MAX_HEIGHT;
+    }
+    return MAX_HEIGHT;
   }
 
   /**
    * getHeight
    */
   public getOriginamHeight() {
-    return this.document.body.offsetWidth > 415 ? HEIGHT : RESPONSIVE_HEIGHT;
+    if (this.document.body.offsetWidth > 415 && this.document.body.offsetWidth < 1082) {
+      return RESPONSIVE_HEIGHT_2;
+    } else if (this.document.body.offsetWidth <= 415) {
+      return RESPONSIVE_HEIGHT;
+    }
+    return HEIGHT;
   }
 
   private applyFadeInAnimation(): void {

@@ -16,8 +16,8 @@
      #logo-section {
          margin-left: 20px;
          width: 40px;
-         color: white;
-         font-size: 52px;
+         color: var(--hightColor_blueGreen);
+         font-size: 58px;
          transition: all 2400ms cubic-bezier(0.19, 1, 0.22, 1);
          text-shadow: 10px 10px 10px 10px var(--hightColor_blueGreen);
      }

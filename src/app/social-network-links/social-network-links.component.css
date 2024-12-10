@@ -1,13 +1,11 @@
 #container {
     display: grid;
     height: 100vh;
-    align-items: center;
-    width: 10vw;
     font-family: "Space Mono", monospace;
-}
-
-#socialLinks {
-    margin-left: 60px;
+    padding-left: 5%;
+    align-items: end;
+    position: fixed;
+    z-index: 50;
 }
 
 .socialLink:hover {
@@ -85,4 +83,12 @@ li {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+#verticalLine {
+    margin-top: 8px;
+    margin-left: 12px;
+    width: 2px;
+    height: 48px;
+    background-color: white;
 }

@@ -1,11 +1,77 @@
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1082px) {
+    #Digital-Products-Page {
+        height: 1000px;
+    }
+
+    .product-align-right {
+        margin-left: -510px;
+    }
+
+    .product-cover-image {
+        width: 500px;
+        height: 350px;
+    }
+
+    .productDescription {
+        width: 500px;
+        min-height: 350px;
+        opacity: .9;
+    }
+
+    .container {
+        justify-self: center;
+        width: 100%;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .products-table {
+        display: grid;
+        justify-items: center;
+    }
+
+    .product {
+        justify-content: center;
+    }
+
+    .product-title {
+        font-size: 26px;
+    }
+
+    .product-description {
+        font-size: 20px;
+        height: 200px;
+    }
+
+    .product-reference-image {
+        width: 42px;
+    }
+
+    .KnowMoreButton {
+        width: 120px;
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .load-more-button {
+        width: 200px;
+        height: 48px;
+        font-size: 18px;
+        min-height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
     .container {
         width: 90%;
         justify-self: center;
     }
 
     #Digital-Products-Page {
-        height: 600px;
+        height: 800px;
     }
 
     .productDescription {
@@ -31,13 +97,14 @@
 
     .title {
         font-size: 18px;
+        font-size: 20px;
         margin-left: 10px;
     }
 
     .product-description {
-        font-size: 15px;
+        font-size: 18px;
         border-radius: 2vw;
-        height: 120px;
+        height: 200px;
         width: 90%;
         margin-left: 10px;
     }
@@ -45,14 +112,6 @@
     .product-reference-image {
         width: 36px;
         margin-right: 10px;
-    }
-
-    .more-projects-button {
-        width: 105px;
-        height: 32px;
-        font-size: 12px;
-        border-radius: 1vw;
-        margin-left: 2vw;
     }
 
     .product-cover-image:hover {
@@ -78,6 +137,10 @@
         font-size: 14px;
         width: 150px;
         height: 24px;
+    }
+
+    .page-title {
+        font-size: 24px;
     }
 
 }

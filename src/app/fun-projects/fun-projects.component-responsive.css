@@ -1,10 +1,62 @@
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1082px) {
+    .container {
+        display: grid;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .product-table {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .project {
+        width: 250px;
+        height: 350px;
+    }
+
+    .projectDescription {
+        font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    #projectImage {
+        width: 32px;
+    }
+
+    .KnowMoreButton {
+        width: 120px;
+        font-size: 15px;
+        height: 40px;
+    }
+
+    #funProjects {
+        height: 1300px;
+    }
+
+    .load-more-button {
+        width: 200px;
+        height: 48px;
+        font-size: 18px;
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
     .container {
         width: 340px;
     }
 
     #funProjects {
-        height: 2100px;
+        height: 2600px;
     }
 
     .product-table {
@@ -16,9 +68,13 @@
         padding-top: 12px;
         row-gap: 12px;
         width: 240px;
-        /* height: 60vw; */
         border-radius: 2vw;
     }
+
+    .page-title {
+        font-size: 24px;
+    }
+
 
     .project-title {
         color: var(--hightColor_blueGreen);
@@ -33,12 +89,12 @@
 
     .projectDescription {
         width: 58vw;
-        margin-left: 2vw;
-        font-size: 14px;
+        margin-left: 2px;
+        font-size: 16px;
     }
 
     #projectImage {
-        margin-top: 2vw;
+        margin-top: 2px;
         width: 36px;
     }
 

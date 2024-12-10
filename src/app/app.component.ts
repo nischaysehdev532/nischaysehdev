@@ -13,20 +13,23 @@ import { CertificateDB } from './database/CertificateDB';
 import { AnimationUtility } from './utitlity/AnimationUtility';
 import { DOCUMENT } from '@angular/common';
 import { LearnMoreAboutProjectComponent } from "./learn-more-about-project/learn-more-about-project.component";
+import { SocialNetworkLinksComponent } from './social-network-links/social-network-links.component';
+import { LeftSidebarComponent } from './left-sidebar/left-sidebar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [ReactiveFormsModule,
-    RouterOutlet,
+    SocialNetworkLinksComponent,
     FrontPageComponent,
+    LeftSidebarComponent,
     AboutMeComponent,
     NavbarComponent,
     WorkDescriptionComponent,
     DigitalProductsComponent,
     FunProjectsComponent,
     GetInTouchComponent,
-    CertificationsComponent, LearnMoreAboutProjectComponent],
+    LearnMoreAboutProjectComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css', './app.component-responsive.css']
 
