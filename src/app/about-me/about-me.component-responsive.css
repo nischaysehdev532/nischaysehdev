@@ -1,0 +1,10 @@
+@media screen and (max-width: 430px) {
+    .sub-container {
+        width: 90%;
+        justify-self: center;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+}

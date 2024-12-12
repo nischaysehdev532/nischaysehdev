@@ -1,0 +1,23 @@
+.button {
+    height: 3vh;
+    width: 36px;
+    border-radius: var(--buttonBorderRadius);
+    cursor: pointer;
+    color: var(--hightColor_blueGreen);
+    font-size: 14px;
+    margin-top: 2vw;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: transparent;
+    border: var(--hightColor_blueGreen) 1px solid;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.resume-button {
+    height: 40px;
+    margin-top: 0vw;
+    width: 100px;
+}
+
+.button:hover {
+    box-shadow: 8px 8px 2px 1px var(--hightColor_blueGreen);
+}

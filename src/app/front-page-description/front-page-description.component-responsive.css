@@ -1,0 +1,72 @@
+@media screen and (max-width: 430px) {
+    #container {
+        margin-top: 2px;
+        align-content: center;
+        width: 100%;
+        margin-left: -15%;
+        row-gap: 12px;
+    }
+
+    #greetings {
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+
+    #name {
+        font-size: 36px;
+    }
+
+    #tagline {
+        margin-top: 12px;
+        height: fit-content;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    #description {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .button {
+        height: 48px;
+        width: 240px;
+        font-size: 16px;
+        border-radius: 2vw;
+        /* margin-top: ; */
+    }
+
+}
+
+/* @media screen and (min-width: 1280px) {
+    #container {
+        height: 100vh;
+        align-content: center;
+        margin-left: 2vw;
+        margin-right: 5vw;
+    }
+
+    #greetings {
+        font-size: 1.2rem;
+        word-spacing: 2px;
+    }
+
+    #name {
+        font-size: 5.5rem;
+    }
+
+    #tagline {
+        font-size: 5.3vw;
+    }
+
+    #description {
+        font-size: 1.8vw;
+        width: 60%;
+    }
+
+    .button {
+        height: 6vw;
+        width: 25vw;
+        font-size: 1.7vw;
+    }
+} */

@@ -1,0 +1,101 @@
+@media screen and (max-width: 430px) {
+    .container {
+        width: 90%;
+        justify-self: center;
+    }
+
+    #organization-title {
+        font-size: 16px;
+    }
+
+    #organization-duration {
+        column-span: 1/2;
+        font-size: 12px;
+    }
+
+    .oragnization-name {
+        flex: 0 0 auto;
+        padding: 2px;
+        font-size: 14px;
+        color: white;
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
+
+    .oragnization-name:hover {
+        cursor: pointer;
+    }
+
+    #organization-list {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #organization-title {
+        display: none;
+        color: var(--hightColor_blueGreen);
+    }
+
+    #organization-desgination {
+        font-size: 1.2rem;
+        color: var(--hightColor_blueGreen);
+    }
+
+    #organization-duration {
+        font-size: 14px;
+    }
+
+    ul {
+        display: inline-block;
+    }
+
+    .min-scrollbar::-webkit-scrollbar {
+        width: .1vw;
+        height: 1vw;
+    }
+
+    #organization-title-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin-top: 16px;
+    }
+
+    .jobDescription {
+        grid-template-columns: auto;
+        grid-row: auto auto;
+    }
+
+    .navigation-buttons {
+        display: none;
+    }
+
+    .jobDescriptionPoints {
+        font-size: 16px;
+    }
+
+    .content {
+        font-size: 4vw;
+    }
+
+    #organizationImage {
+        vertical-align: middle;
+        width: 150px;
+    }
+
+    .navnumber {
+        font-size: 12px;
+    }
+
+    .oragnization-image {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .modifyClass {
+        color: var(--hightColor_blueGreen);
+        background-color: #10284b;
+        padding: 6px;
+    }
+}

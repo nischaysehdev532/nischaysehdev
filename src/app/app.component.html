@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+<app-learn-more-about-project></app-learn-more-about-project>
+<div id="container">
+    <app-front-page></app-front-page>
+    <app-about-me></app-about-me>
+    <app-work-description></app-work-description>
+    <app-digital-products></app-digital-products>
+    <app-fun-projects></app-fun-projects>
+    <app-get-in-touch></app-get-in-touch>
+</div>
+<div class="contact-form" id="contact-form">
+    <div id="contactFormNavbar">
+        <div id="contactFormHeading">
+            Let's Connect..
+        </div>
+        <div id="contactFormClosingButton">
+            <button type="button" id="closingButton" (click)="closeContactForm()">X</button>
+        </div>
+    </div>
+    <!-- <form [formGroup]="contactFrom" (ngSubmit)="onSubmit()"> -->
+    <form (ngSubmit)="onSubmit()" class="contactFrom">
+        <div class="section">
+            <div class="input-label">Full Name:</div>
+            <div class="input">
+                <!-- <input type="text" class="input-field" name="username" id="username" [formControl]="fullName"> -->
+                <input type="text" class="input-field" name="username" id="username">
+            </div>
+        </div>
+        <div class="section">
+            <div class="input-label">Email Id:</div>
+            <div class="input">
+                <!-- <input type="email" class="input-field" name="usermail" id="usermail" [formControl]="emailId"> -->
+                <input type="email" class="input-field" name="usermail" id="usermail">
+            </div>
+        </div>
+        <div class="section">
+            <div class="input-label">Organization name:</div>
+            <div class="input">
+                <input type="text" class="input-field" name="userorganization" id="userorganization">
+                <!-- <input type="text" class="input-field" name="userorganization" id="userorganization"
+                    [formControl]="organizationName"> -->
+            </div>
+        </div>
+        <div class="section">
+            <div class="input-label">Why we should connect?</div>
+            <div class="input">
+                <!-- <textarea name="usermessage" class="input-field" id="usermessage" [formControl]="purpose"></textarea> -->
+                <textarea name="usermessage" class="input-field" id="usermessage"></textarea>
+            </div>
+        </div>
+        <div class="section">
+            <div class="input-label">Attachment:</div>
+            <div class="input">
+                <!-- <input type="file" class="input-field" name="userfile" id="userfile" [formControl]="attachment"> -->
+                <input type="file" class="input-field" name="userfile" id="userfile">
+            </div>
+        </div>
+        <div class="section">
+            <div class="input-label input-button"><input type="submit" class="button input-field-button" value="Submit"
+                    id="submit">
+            </div>
+        </div>
+    </form>
+</div>
