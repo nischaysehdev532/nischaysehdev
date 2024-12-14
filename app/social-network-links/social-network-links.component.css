@@ -1,0 +1,94 @@
+#container {
+    display: grid;
+    height: 100vh;
+    font-family: "Space Mono", monospace;
+    padding-left: 5%;
+    align-items: end;
+    position: fixed;
+    z-index: 50;
+}
+
+.socialLink:hover {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+li {
+    list-style-type: none;
+}
+
+.iconImage {
+    margin-top: 12px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+#bottomLine {
+    transform: rotate(90deg);
+    width: 60px;
+}
+
+#settingIcon {
+    width: 2.5vw;
+    margin-left: 20px;
+
+}
+
+#settingIcon:hover {
+    cursor: pointer;
+    -webkit-animation: rotateIcon 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotateIcon 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#settingContainer {
+    display: none;
+    grid-template-columns: auto auto;
+    width: 5.5vw;
+    column-gap: 1vw;
+}
+
+#options {
+    display: none;
+    /* width: 15w; */
+    /* height: 10w; */
+    /* padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1VW;
+    padding-bottom: 1VW; */
+}
+
+.settingOption {
+    font-size: .75vw;
+    width: 7vw;
+    padding-left: 1vw;
+    padding-top: .25vw;
+}
+
+.settingOption:hover {
+    cursor: pointer;
+    border: 2px solid;
+    color: var(--hightColor_blueGreen);
+}
+
+@-webkit-keyframes rotateIcon {
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateIcon {
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#verticalLine {
+    margin-top: 8px;
+    margin-left: 12px;
+    width: 2px;
+    height: 48px;
+    background-color: white;
+}

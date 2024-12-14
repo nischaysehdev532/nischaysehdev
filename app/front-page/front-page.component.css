@@ -1,0 +1,13 @@
+    #frontPageContainer {
+        display: grid;
+        font-weight: bolder;
+        justify-content: space-around;
+        color: white;
+        width: 100%;
+        justify-content: center;
+        line-height: 1.5;
+        height: 100vh;
+        align-content: center;
+        -webkit-animation: fade-in-top 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-top 1.0s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }

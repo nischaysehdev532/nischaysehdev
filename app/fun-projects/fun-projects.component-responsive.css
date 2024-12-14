@@ -1,0 +1,126 @@
+@media screen and (max-width: 1082px) {
+    .container {
+        display: grid;
+        width: 100%;
+        justify-self: center;
+    }
+
+    .product-table {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .project {
+        width: 250px;
+        height: 350px;
+    }
+
+    .projectDescription {
+        font-size: 18px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .page-title {
+        font-size: 28px;
+    }
+
+    #projectImage {
+        width: 32px;
+    }
+
+    .KnowMoreButton {
+        width: 120px;
+        font-size: 15px;
+        height: 40px;
+    }
+
+    #funProjects {
+        height: 1300px;
+    }
+
+    .load-more-button {
+        width: 200px;
+        height: 48px;
+        font-size: 18px;
+        min-height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 340px;
+    }
+
+    #funProjects {
+        height: 2600px;
+    }
+
+    .product-table {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .project {
+        padding-top: 12px;
+        row-gap: 12px;
+        width: 240px;
+        border-radius: 2vw;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+
+    .project-title {
+        color: var(--hightColor_blueGreen);
+        font-size: 18px;
+    }
+
+    #project-title-container {
+        margin-left: 6px;
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    .projectDescription {
+        width: 58vw;
+        margin-left: 2px;
+        font-size: 16px;
+    }
+
+    #projectImage {
+        margin-top: 2px;
+        width: 36px;
+    }
+
+    .KnowMoreButton {
+        width: 105px;
+        height: 32px;
+        font-size: 12px;
+        border-radius: 1vw;
+        margin-left: 2vw;
+    }
+
+
+
+    .load-button {
+        margin-top: -20vw;
+    }
+
+    .load-more-button {
+        font-size: 14px;
+        width: 150px;
+        height: 24px;
+        margin-top: 12vh;
+        border-radius: 1vw;
+    }
+
+    .responsive-height {
+        height: 80vh;
+    }
+}

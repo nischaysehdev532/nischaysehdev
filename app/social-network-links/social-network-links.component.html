@@ -1,0 +1,28 @@
+<div id="container">
+    <!-- Commented as setting container options are not defined -->
+    <div id="settingContainer">
+        <div>
+            <img src="setting-icon.png" (mouseenter)="applyChanges($event)" (mouseleave)="removeChanges($event)"
+                id="settingIcon" alt="Setting">
+        </div>
+        <div id="options">
+            <div class="settingOption">Info</div>
+            <div class="settingOption">Change theme</div>
+            <div class="settingOption">Mute</div>
+        </div>
+    </div>
+    <div id="socialLinks">
+        <ul>
+            <div *ngFor="let socialLink of socialLinks | keyvalue">
+                <li class="socialLink"><a href={{socialLink.value.href}} target="_blank"><img
+                            src={{socialLink.value.imageUrl}} alt={{socialLink.key}} (mouseenter)="changeColor($event)"
+                            (mouseleave)="revertColor($event)" class="iconImage" id="iconImage" /></a>
+                </li>
+            </div>
+            <div id="verticalLine">
+                ""
+            </div>
+        </ul>
+    </div>
+
+</div>

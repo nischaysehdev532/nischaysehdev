@@ -1,0 +1,74 @@
+@media screen and (max-width: 1082px) {
+    #container {
+        width: 100%;
+    }
+
+    #greetings {
+        font-size: 2.5vw;
+        word-spacing: 2px;
+    }
+
+    #name {
+        font-size: 8.7vw;
+    }
+
+    #tagline {
+        font-size: 6.5vw;
+    }
+
+
+    #description {
+        font-size: 3vw;
+        width: 80%;
+    }
+
+    .button {
+        height: 10vw;
+        width: 45vw;
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #container {
+        margin-top: 2px;
+        align-content: center;
+        width: 90vw;
+        /* row-gap: 12px; */
+        row-gap: 12px;
+    }
+
+    #greetings {
+        font-size: 12px;
+        word-spacing: 2px;
+    }
+
+    #name {
+        /* font-size: 36px; */
+        font-size: 44px;
+    }
+
+    #tagline {
+        margin-top: 12px;
+        height: fit-content;
+        /* font-size: 32px; */
+        font-size: 40px;
+        /* line-height: 42px; */
+        line-height: 52px;
+    }
+
+    #description {
+        /* font-size: 16px; */
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .button {
+        height: 48px;
+        width: 240px;
+        font-size: 16px;
+        border-radius: 2vw;
+        /* margin-top: ; */
+    }
+
+}
